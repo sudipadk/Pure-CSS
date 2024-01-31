@@ -1,10 +1,10 @@
 const accordionContainers = document.querySelectorAll(".accordionContainer");
 
 accordionContainers.forEach((item) => {
-    const trigger = item.querySelector(".material-icons");
+    const icons = item.querySelector(".material-icons");
     const content = item.querySelector(".content");
 
-    trigger.addEventListener("click", () => {
+    icons.addEventListener("click", () => {
         item.classList.toggle("active");
     });
 });
